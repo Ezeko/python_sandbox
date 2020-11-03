@@ -40,15 +40,19 @@ students = ['ade', 'olu', 'ola', 'ope', 'olawale', 'eze', 'joseph']
 
 #while loops
 
-count = 0
-# while count < len(students): 
-#     print(students[count])
+# count = 0
+# # while count < len(students): 
+# #     print(students[count])
+# #     count +=1
+
+# while count < 25 :
+#     if count < 1 :
+#         count +=1
+#         continue
+#     if count % 2 == 0 :
+#         print (count)
 #     count +=1
 
-while count < 25 :
-    if count < 1 :
-        count +=1
-        continue
-    if count % 2 == 0 :
-        print (count)
-    count +=1
+#range
+
+print(range(5))
