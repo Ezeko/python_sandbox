@@ -55,4 +55,6 @@ students = ['ade', 'olu', 'ola', 'ope', 'olawale', 'eze', 'joseph']
 
 #range
 
-print(range(5))
+
+for n in range(1,9,2):
+    print(n)
