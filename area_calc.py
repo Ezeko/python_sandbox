@@ -56,5 +56,7 @@ students = ['ade', 'olu', 'ola', 'ope', 'olawale', 'eze', 'joseph']
 #range
 
 
-for n in range(1,9,2):
-    print(n)
+# for n in range(1,9,2):
+#     print(n)
+
+print(sorted(students))
