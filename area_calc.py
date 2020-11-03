@@ -22,9 +22,33 @@
 # age = input('Tell me your age:')
 
 # if int(age) < 18 :
-#     print(f'You have {18 - int(age)} years to be eligible to drive')
+#     print(f'😳pps! You have {18 - int(age)} years to be eligible to drive')
 
 # elif int (age) >= 18 :
 #     print('You are eligible to drive 👍🏼')
 # else :
 #     print('Kindly input a valid age')
+
+# loops
+
+# for loops
+
+students = ['ade', 'olu', 'ola', 'ope', 'olawale', 'eze', 'joseph']
+
+# for student in students :
+#     print (student)
+
+#while loops
+
+count = 0
+# while count < len(students): 
+#     print(students[count])
+#     count +=1
+
+while count < 25 :
+    if count < 1 :
+        count +=1
+        continue
+    if count % 2 == 0 :
+        print (count)
+    count +=1
