@@ -59,4 +59,23 @@ students = ['ade', 'olu', 'ola', 'ope', 'olawale', 'eze', 'joseph']
 # for n in range(1,9,2):
 #     print(n)
 
-print(sorted(students))
+# print(sorted(students))
+
+def sayName(name) :
+    print(f'your name is {name}')
+
+
+name = input('Tell me your name: ')
+
+sayName(name)
+while True:
+    ask = input('continue? y/n: ')
+    if ask == 'y':
+        name = input('Any other name: ')
+        sayName(name)
+        continue
+    elif ask == 'n':
+        break
+    else:
+        print('Reply with either \'y\' or \'n\' ')
+        continue
