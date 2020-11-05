@@ -61,21 +61,52 @@ students = ['ade', 'olu', 'ola', 'ope', 'olawale', 'eze', 'joseph']
 
 # print(sorted(students))
 
-def sayName(name) :
-    print(f'your name is {name}')
+
+### Functions
+# def sayName(name) :
+#     print(f'your name is {name}')
 
 
-name = input('Tell me your name: ')
+# name = input('Tell me your name: ')
 
-sayName(name)
-while True:
-    ask = input('continue? y/n: ')
-    if ask == 'y':
-        name = input('Any other name: ')
-        sayName(name)
-        continue
-    elif ask == 'n':
-        break
-    else:
-        print('Reply with either \'y\' or \'n\' ')
-        continue
+# sayName(name)
+# while True:
+#     ask = input('continue? y/n: ')
+#     if ask == 'y':
+#         name = input('Any other name: ')
+#         sayName(name)
+#         continue
+#     elif ask == 'n':
+#         break
+#     else:
+#         print('Reply with either \'y\' or \'n\' ')
+#         continue
+
+
+##class
+
+# class Person():
+#     def __init__(self):
+#         self.name = 'Ezeko'
+#         self.age = 19
+#         self.occupation = 'Software Development'
+        
+# myself = Person()
+
+# print(f'my name is {myself.name}, I am {myself.age} years old')
+
+
+## using init
+
+class InitClass():
+    def __init__(self, name, age, occupation, department):
+        self.name = name
+        self.age = age
+        self.occupation = occupation
+        self.department = department
+
+wale = InitClass('Olawale', 17, 'Teaching', 'Programming')
+print(f'Hello there, my name is {wale.name}, I am {wale.age} years old') 
+
+biola = InitClass('Abiola', 27, 'Accounting', 'Forensic')
+print(f'Hello there, my name is {biola.name}, I am {biola.age} years old')
