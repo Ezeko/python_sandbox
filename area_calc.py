@@ -117,6 +117,10 @@ class ClassMethodTest():
     
     globalVariable = 'something accessible any where in the class'
     
+    @classmethod
+    def clmthd(cls):
+        return print('this is a class method')
+    
     def __init__(self, name, age):
         self.name = name
         self.age = age
@@ -124,6 +128,9 @@ class ClassMethodTest():
 
 print(ClassMethodTest.globalVariable)
 
+
 nerw = ClassMethodTest('Biola', 87)
 
-print (f'{nerw.globalVariable} accessed from {nerw.name}')
+# print (f'{nerw.globalVariable} accessed from {nerw.name}')
+
+print(f'{ClassMethodTest.clmthd}')
