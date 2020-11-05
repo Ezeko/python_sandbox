@@ -98,15 +98,32 @@ students = ['ade', 'olu', 'ola', 'ope', 'olawale', 'eze', 'joseph']
 
 ## using init
 
-class InitClass():
-    def __init__(self, name, age, occupation, department):
+# class InitClass():
+#     def __init__(self, name, age, occupation, department):
+#         self.name = name
+#         self.age = age
+#         self.occupation = occupation
+#         self.department = department
+
+# wale = InitClass('Olawale', 17, 'Teaching', 'Programming')
+# print(f'Hello there, my name is {wale.name}, I am {wale.age} years old') 
+
+# biola = InitClass('Abiola', 27, 'Accounting', 'Forensic')
+# print(f'Hello there, my name is {biola.name}, I am {biola.age} years old')
+
+## class method
+
+class ClassMethodTest():
+    
+    globalVariable = 'something accessible any where in the class'
+    
+    def __init__(self, name, age):
         self.name = name
         self.age = age
-        self.occupation = occupation
-        self.department = department
+    
 
-wale = InitClass('Olawale', 17, 'Teaching', 'Programming')
-print(f'Hello there, my name is {wale.name}, I am {wale.age} years old') 
+print(ClassMethodTest.globalVariable)
 
-biola = InitClass('Abiola', 27, 'Accounting', 'Forensic')
-print(f'Hello there, my name is {biola.name}, I am {biola.age} years old')
+nerw = ClassMethodTest('Biola', 87)
+
+print (f'{nerw.globalVariable} accessed from {nerw.name}')
