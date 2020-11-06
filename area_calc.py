@@ -113,24 +113,41 @@ students = ['ade', 'olu', 'ola', 'ope', 'olawale', 'eze', 'joseph']
 
 ## class method
 
-class ClassMethodTest():
+# class ClassMethodTest():
     
-    globalVariable = 'something accessible any where in the class'
+#     globalVariable = 'something accessible any where in the class'
     
-    @classmethod
-    def clmthd(cls):
-        return print('this is a class method')
+#     @classmethod
+#     def clmthd(cls):
+#         return ('this is a class method')
     
-    def __init__(self, name, age):
-        self.name = name
-        self.age = age
+#     def __init__(self, name, age):
+#         self.name = name
+#         self.age = age
     
 
-print(ClassMethodTest.globalVariable)
+# print(ClassMethodTest.globalVariable)
 
 
-nerw = ClassMethodTest('Biola', 87)
+# nerw = ClassMethodTest('Biola', 87)
 
-# print (f'{nerw.globalVariable} accessed from {nerw.name}')
+# # print (f'{nerw.globalVariable} accessed from {nerw.name}')
 
-print(f'{ClassMethodTest.clmthd}')
+# print(f'{ClassMethodTest.clmthd()}')
+
+## List comprehension
+
+prizes = [80, 50, 67, 9, 56, 9, 77]
+
+double_prizes = [prize * 2 for prize in prizes]
+
+print (double_prizes)
+
+
+##squaring numbers
+
+numbers = [1,2,3,4,5,6,7,8,9,10]
+
+square_num = [number ** 2  for number in numbers if number % 2 == 0]
+
+print(f'squared {numbers} is {square_num}')
