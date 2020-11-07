@@ -154,17 +154,27 @@
 
 #DECORATORS
 
-def decoTest(func):
-    #do this before passed func
-    print('This is before the function')
-    print('--------------------------')
-    func()
-    print('--------------------------')
-    print('This is after function')
+# def decoTest(func):
+#     #do this before passed func
+#     print('This is before the function')
+#     print('--------------------------')
+#     func()
+#     print('--------------------------')
+#     print('This is after function')
     
 
-@decoTest
-def someFunc():
-    return print('THIS is the function itself')
+# @decoTest
+# def someFunc():
+#     return print('THIS is the function itself')
 
-    
+## map 
+#prototype
+
+# map(function, iterables)
+
+#lambdas
+
+## lambda is  a short function that returns value
+# checks = [1,2,3,4,5,6,7,8]
+
+# print(list(map(lambda n: n * n , checks))) # use lambda in map
