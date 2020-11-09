@@ -1,2 +1,5 @@
 bla bla bla
 Another stuff added with python
+Some new stuff with quotes
+Another quote written newly
+Some great new stuff
